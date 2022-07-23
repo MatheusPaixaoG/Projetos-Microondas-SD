@@ -1,0 +1,43 @@
+$date
+	Thu May 12 16:49:46 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module sr_latch_tb $end
+$var wire 1 ! mag_on $end
+$var reg 1 " reset $end
+$var reg 1 # set $end
+$scope module DUT $end
+$var wire 1 " reset $end
+$var wire 1 # set $end
+$var reg 1 ! mag_on $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x#
+x"
+x!
+$end
+#10000
+1!
+0"
+1#
+#20000
+0#
+#30000
+0!
+1"
+#40000
+0"
+#50000
+1!
+1#
+#60000
+0#
+#70000
