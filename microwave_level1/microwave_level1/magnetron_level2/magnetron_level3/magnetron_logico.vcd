@@ -1,0 +1,59 @@
+$date
+	Thu May 12 20:06:50 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module magnetron_logico_tb $end
+$var wire 1 ! S $end
+$var wire 1 " R $end
+$var reg 1 # clearn $end
+$var reg 1 $ door_closed $end
+$var reg 1 % startn $end
+$var reg 1 & stopn $end
+$var reg 1 ' timer_done $end
+$scope module dut $end
+$var wire 1 # clearn $end
+$var wire 1 $ door_closed $end
+$var wire 1 % startn $end
+$var wire 1 & stopn $end
+$var wire 1 ' timer_done $end
+$var reg 1 " R $end
+$var reg 1 ! S $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0'
+1&
+1%
+1$
+1#
+0"
+0!
+$end
+#10000
+1!
+0%
+#20000
+1"
+0!
+0&
+1%
+#30000
+0#
+1&
+#40000
+0$
+1#
+#50000
+1'
+1$
+#60000
+0"
+0'
+#70000

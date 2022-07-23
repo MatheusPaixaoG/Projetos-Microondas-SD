@@ -1,0 +1,117 @@
+$date
+	Thu May 12 01:53:31 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module magnetron_tb $end
+$var wire 1 ! mag_on $end
+$var reg 1 " clearn $end
+$var reg 1 # door_closed $end
+$var reg 1 $ startn $end
+$var reg 1 % stopn $end
+$var reg 1 & timer_done $end
+$scope module dut $end
+$var wire 1 " clearn $end
+$var wire 1 # door_closed $end
+$var wire 1 $ startn $end
+$var wire 1 % stopn $end
+$var wire 1 & timer_done $end
+$var wire 1 ! mag_on $end
+$var wire 1 ' S $end
+$var wire 1 ( R $end
+$scope module mag_log $end
+$var wire 1 " clearn $end
+$var wire 1 # door_closed $end
+$var wire 1 $ startn $end
+$var wire 1 % stopn $end
+$var wire 1 & timer_done $end
+$var reg 1 ( R $end
+$var reg 1 ' S $end
+$upscope $end
+$scope module sr $end
+$var wire 1 ( R $end
+$var wire 1 ' S $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0(
+0'
+0&
+1%
+1$
+1#
+1"
+0!
+$end
+#10000
+1!
+1'
+0$
+#20000
+0'
+1$
+#30000
+0!
+1(
+0%
+#40000
+0(
+1%
+#50000
+1!
+1'
+0$
+#60000
+0'
+1$
+#70000
+0!
+1(
+0"
+#80000
+0(
+1"
+#90000
+1!
+1'
+0$
+#100000
+0'
+1$
+#110000
+0!
+1(
+0#
+#120000
+0(
+1#
+#130000
+1!
+1'
+0$
+#140000
+0'
+1$
+#150000
+0!
+1(
+1&
+#160000
+0(
+0&
+#170000
+1!
+1'
+0$
+#180000
+0'
+1$
+#190000

@@ -1,0 +1,602 @@
+$date
+	Thu May 12 22:14:22 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module microwave_tb $end
+$var wire 7 ! sec_tens_segs [6:0] $end
+$var wire 7 " sec_ones_segs [6:0] $end
+$var wire 7 # min_segs [6:0] $end
+$var wire 1 $ mag_on $end
+$var wire 1 % clock $end
+$var wire 7 & blank_digits [6:0] $end
+$var reg 1 ' clearn $end
+$var reg 1 ( door_closed $end
+$var reg 1 ) en $end
+$var reg 10 * keypad [9:0] $end
+$var reg 1 + startn $end
+$var reg 1 , stopn $end
+$scope module c $end
+$var wire 1 ) enable $end
+$var reg 1 % clk $end
+$upscope $end
+$scope module dut $end
+$var wire 1 ' clearn $end
+$var wire 1 % clock $end
+$var wire 1 ( door_closed $end
+$var wire 10 - keypad [9:0] $end
+$var wire 1 + startn $end
+$var wire 1 , stopn $end
+$var wire 1 . zero_wire $end
+$var wire 4 / tens_secs_wire [3:0] $end
+$var wire 4 0 secs_wire [3:0] $end
+$var wire 7 1 sec_tens_segs [6:0] $end
+$var wire 7 2 sec_ones_segs [6:0] $end
+$var wire 4 3 minutes_wire [3:0] $end
+$var wire 7 4 min_segs [6:0] $end
+$var wire 1 5 mag_on_wire $end
+$var wire 1 6 loadn_wire $end
+$var wire 1 7 clock_1hz_wire $end
+$var wire 4 8 D_wire [3:0] $end
+$var reg 7 9 blank_digits [6:0] $end
+$var reg 1 $ mag_on $end
+$scope module dec $end
+$var wire 7 : s_tens_segs [6:0] $end
+$var wire 4 ; s_tens [3:0] $end
+$var wire 7 < s_ones_segs [6:0] $end
+$var wire 4 = s_ones [3:0] $end
+$var wire 7 > min_segs [6:0] $end
+$var wire 4 ? min [3:0] $end
+$upscope $end
+$scope module mag $end
+$var wire 1 ' clearn $end
+$var wire 1 ( door_closed $end
+$var wire 1 + startn $end
+$var wire 1 , stopn $end
+$var wire 1 . timer_done $end
+$var wire 1 5 mag_on $end
+$var wire 1 @ S $end
+$var wire 1 A R $end
+$scope module mag_log $end
+$var wire 1 ' clearn $end
+$var wire 1 ( door_closed $end
+$var wire 1 + startn $end
+$var wire 1 , stopn $end
+$var wire 1 B timer_done $end
+$var reg 1 A R $end
+$var reg 1 @ S $end
+$upscope $end
+$scope module sr $end
+$var wire 1 A R $end
+$var wire 1 @ S $end
+$var reg 1 5 Q $end
+$upscope $end
+$upscope $end
+$scope module t $end
+$var wire 1 ' clearn $end
+$var wire 1 5 enable $end
+$var wire 1 C zero3 $end
+$var wire 1 D zero2 $end
+$var wire 1 E zero1 $end
+$var wire 4 F tens_secs [3:0] $end
+$var wire 1 G tc3 $end
+$var wire 1 H tc2 $end
+$var wire 1 I tc1 $end
+$var wire 4 J secs [3:0] $end
+$var wire 4 K minutes [3:0] $end
+$var wire 1 6 loadn $end
+$var wire 4 L digit [3:0] $end
+$var wire 1 7 CLK $end
+$var reg 1 . timer_done $end
+$scope module minutes_counter $end
+$var wire 1 ' clrn $end
+$var wire 1 M en $end
+$var wire 1 C zero $end
+$var wire 1 6 loadn $end
+$var wire 4 N data [3:0] $end
+$var wire 1 7 clk $end
+$var reg 4 O ones [3:0] $end
+$var reg 1 G tc $end
+$upscope $end
+$scope module seconds_counter $end
+$var wire 1 ' clrn $end
+$var wire 1 5 en $end
+$var wire 1 E zero $end
+$var wire 1 6 loadn $end
+$var wire 4 P data [3:0] $end
+$var wire 1 7 clk $end
+$var reg 4 Q ones [3:0] $end
+$var reg 1 I tc $end
+$upscope $end
+$scope module tens_secs_counter $end
+$var wire 1 ' clrn $end
+$var wire 4 R data [3:0] $end
+$var wire 1 S en $end
+$var wire 1 D zero $end
+$var wire 1 6 loadn $end
+$var wire 1 7 clk $end
+$var reg 1 H tc $end
+$var reg 4 T tens [3:0] $end
+$upscope $end
+$upscope $end
+$scope module tic $end
+$var wire 1 % CLK_100HZ $end
+$var wire 1 5 EN_N $end
+$var wire 10 U KPAD [9:0] $end
+$var wire 1 V mux_D1_clk_1hz $end
+$var wire 1 W mux_D0_debouncer_0_7 $end
+$var wire 1 6 LOAD_N $end
+$var wire 4 X D [3:0] $end
+$var wire 1 7 CLK_1HZ $end
+$scope module counter $end
+$var wire 1 % CLK $end
+$var wire 1 6 CLEAR $end
+$var reg 1 W OUT $end
+$var reg 3 Y actual_state [2:0] $end
+$upscope $end
+$scope module encoder $end
+$var wire 10 Z DEC [9:0] $end
+$var wire 1 5 EN_N $end
+$var wire 1 6 LOAD_N $end
+$var reg 4 [ BCD [3:0] $end
+$upscope $end
+$scope module freq_div100 $end
+$var wire 1 % CLK_IN $end
+$var wire 1 V CLK_OUT $end
+$var reg 7 \ counter [6:0] $end
+$var reg 1 ] out_1hz $end
+$upscope $end
+$scope module mux2to1 $end
+$var wire 1 V D0 $end
+$var wire 1 W D1 $end
+$var wire 1 5 SEL $end
+$var reg 1 7 OUT $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0]
+b0 \
+b0 [
+b0 Z
+b0 Y
+b0 X
+0W
+0V
+b0 U
+b0 T
+0S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+0M
+b0 L
+b0 K
+b0 J
+0I
+0H
+0G
+b0 F
+1E
+1D
+1C
+0B
+1A
+0@
+b0 ?
+b1111110 >
+b0 =
+b1111110 <
+b0 ;
+b1111110 :
+b111111 9
+b0 8
+07
+16
+05
+b1111110 4
+b0 3
+b1111110 2
+b1111110 1
+b0 0
+b0 /
+1.
+b0 -
+1,
+1+
+b0 *
+1)
+1(
+0'
+b111111 &
+0%
+0$
+b1111110 #
+b1111110 "
+b1111110 !
+$end
+#5000
+b1 \
+1%
+#10000
+0%
+#15000
+b10 \
+b1 Y
+0A
+06
+1%
+1'
+b1 *
+b1 -
+b1 U
+b1 Z
+#20000
+0%
+#25000
+b11 \
+b10 Y
+1%
+#30000
+b1 8
+b1 L
+b1 P
+b1 X
+b1 [
+0%
+b10 *
+b10 -
+b10 U
+b10 Z
+#35000
+b100 \
+b11 Y
+1%
+#40000
+0%
+#45000
+b101 \
+1W
+b100 Y
+b10 8
+b10 L
+b10 P
+b10 X
+b10 [
+1%
+b100 *
+b100 -
+b100 U
+b100 Z
+#50000
+0%
+#55000
+b110 \
+b101 Y
+1%
+#60000
+1M
+1S
+1$
+0W
+15
+b0 Y
+1@
+b0 8
+b0 L
+b0 P
+b0 X
+b0 [
+16
+0%
+0+
+b0 *
+b0 -
+b0 U
+b0 Z
+#65000
+b111 \
+1%
+#70000
+0%
+#75000
+b1000 \
+0@
+1%
+1+
+#80000
+0%
+#85000
+b1001 \
+1%
+#90000
+0%
+#95000
+b1010 \
+1%
+#100000
+0%
+#105000
+b1011 \
+1%
+#110000
+0%
+#115000
+b1100 \
+1%
+#120000
+0%
+#125000
+b1101 \
+1%
+#130000
+0%
+#135000
+b1110 \
+1%
+#140000
+0%
+#145000
+b1111 \
+1%
+#150000
+0%
+#155000
+b10000 \
+1%
+#160000
+0%
+#165000
+b10001 \
+1%
+#170000
+0%
+#175000
+b10010 \
+0M
+0S
+0$
+05
+1A
+1%
+0,
+#180000
+0%
+#185000
+b10011 \
+1%
+#190000
+0A
+0%
+1,
+#195000
+b10100 \
+1%
+#200000
+0%
+#205000
+b10101 \
+1%
+#210000
+0%
+#215000
+b10110 \
+1%
+#220000
+0%
+#225000
+b10111 \
+1%
+#230000
+0%
+#235000
+b11000 \
+1%
+#240000
+0%
+#245000
+b11001 \
+1%
+#250000
+0%
+#255000
+b11010 \
+1%
+#260000
+0%
+#265000
+b11011 \
+1%
+#270000
+0%
+#275000
+b11100 \
+1%
+#280000
+0%
+#285000
+b11101 \
+1%
+#290000
+1M
+1S
+1$
+15
+1@
+0%
+0+
+#295000
+b11110 \
+1%
+#300000
+0%
+#305000
+b11111 \
+0@
+1%
+1+
+#310000
+0%
+#315000
+b100000 \
+1%
+#320000
+0%
+#325000
+b100001 \
+1%
+#330000
+0%
+#335000
+b100010 \
+1%
+#340000
+0%
+#345000
+b100011 \
+1%
+#350000
+0%
+#355000
+b100100 \
+1%
+#360000
+0%
+#365000
+b100101 \
+1%
+#370000
+0%
+#375000
+b100110 \
+1%
+#380000
+0%
+#385000
+b100111 \
+1%
+#390000
+0%
+#395000
+b101000 \
+1%
+#400000
+0%
+#405000
+b101001 \
+0M
+0S
+0$
+05
+1A
+1%
+0(
+#410000
+0%
+#415000
+b101010 \
+1%
+#420000
+0A
+0%
+1(
+#425000
+b101011 \
+1%
+#430000
+0%
+#435000
+b101100 \
+1%
+#440000
+0%
+#445000
+b101101 \
+1%
+#450000
+0%
+#455000
+b101110 \
+1%
+#460000
+0%
+#465000
+b101111 \
+1%
+#470000
+0%
+#475000
+b110000 \
+1%
+#480000
+0%
+#485000
+b110001 \
+1%
+#490000
+0%
+#495000
+b110010 \
+1%
+#500000
+0%
+#505000
+b110011 \
+1%
+#510000
+0%
+#515000
+b110100 \
+1%
+#520000
+0%
+0)
+#525000
+b110101 \
+1%
+#530000
+0%
+#535000
+b110110 \
+1%
+#540000
+0%
+#545000
+b110111 \
+1%
+#550000
+0%
+#555000
+b111000 \
+1%
+#560000
+0%
+#565000
+b111001 \
+1%
+#570000
+0%
+#575000
+b111010 \
+1%
+#580000
+0%
+#585000
+b111011 \
+1%
+#590000
+0%
+#595000
+b111100 \
+1%
+#600000
+0%
