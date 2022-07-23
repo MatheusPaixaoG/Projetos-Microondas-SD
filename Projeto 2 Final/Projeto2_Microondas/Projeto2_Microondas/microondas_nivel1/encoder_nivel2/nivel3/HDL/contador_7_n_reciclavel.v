@@ -18,7 +18,7 @@ incrementado para 4 na execução em que contador=3.
     begin
         if(Clear) begin
             saida <= 0;
-            contador = 0;
+            contador <= 0; // era contador = 0;
         end
         else begin
             if(contador < 7) 

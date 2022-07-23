@@ -1,4 +1,4 @@
-`timescale 1ps/1ps
+`timescale 1ms/1ps
 `include "../HDL/encoder.v"
 
 module encoder_tb(); 
@@ -22,24 +22,33 @@ module encoder_tb();
         Hz_100_clock_tb = 1; // Para testar, o clock inicial foi 1 e ele ficará alternando
         teclado_tb = 10'b0000000000; // Estado inicial do teclado
 
-        for(i = 0; i < 300; i=i+1) begin
-            #50 Hz_100_clock_tb <= ~Hz_100_clock_tb; // Alterna o relógio a cada 50ps
+        for(i = 0; i < 2200; i=i+1) begin
+            #5 Hz_100_clock_tb <= ~Hz_100_clock_tb; // Alterna o relógio a cada 50ps
         end
-        #10;
+        
     end
 
     initial begin
-        #50 teclado_tb = 10'b0000000000; // Cada um desses é um dígito sendo clicado
-        #50 teclado_tb = 10'b0000000001;
-        #50 teclado_tb = 10'b0000000010;
-        #50 teclado_tb = 10'b0000000100;
-        #50 teclado_tb = 10'b0000001000;
-        #50 teclado_tb = 10'b0000010000;
-        #50 teclado_tb = 10'b0000100000;
-        #50 teclado_tb = 10'b0001000000;
-        #50 teclado_tb = 10'b0010000000;
-        #50 teclado_tb = 10'b0100000000;
-        #50 teclado_tb = 10'b1000000000; enablen_tb = 1; // No enablen_tb desativa no final
+        #500 teclado_tb = 10'b0000000000; // Cada um desses é um dígito sendo clicado
+        #500 teclado_tb = 10'b0000000001;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0000000010;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0000000100;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0000001000;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0000010000;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0000100000;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0001000000;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0010000000;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b0100000000;
+        #500 teclado_tb = 10'b0000000000;
+        #500 teclado_tb = 10'b1000000000; enablen_tb = 1; // No enablen_tb desativa no final
     end
 
 endmodule

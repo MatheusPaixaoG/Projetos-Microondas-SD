@@ -19,7 +19,7 @@ module Counter_mod_10_tb();
                 clk_tb=0; clearn_tb=1; EN_tb=1; loadn_tb=0; data_tb=0;
             #10 clk_tb=1; clearn_tb=1; EN_tb=1; loadn_tb=0; data_tb=9;
             #10 clk_tb=0; clearn_tb=1; EN_tb=1; loadn_tb=1; data_tb=9;
-            #10 clk_tb=1; clearn_tb=1; EN_tb=1; loadn_tb=1; data_tb=0;
+            #10 clk_tb=1; clearn_tb=0; EN_tb=1; loadn_tb=1; data_tb=0;
             #10 clk_tb=0; clearn_tb=1; EN_tb=1; loadn_tb=1; data_tb=0;
             #10 clk_tb=1; clearn_tb=1; EN_tb=1; loadn_tb=1; data_tb=0;
             #10 clk_tb=0; clearn_tb=1; EN_tb=1; loadn_tb=1; data_tb=0;

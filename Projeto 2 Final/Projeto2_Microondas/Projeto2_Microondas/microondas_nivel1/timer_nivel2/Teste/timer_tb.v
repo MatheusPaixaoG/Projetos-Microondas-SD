@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+`timescale 100ms/1ps
 `include "../HDL/timer.v"
 
 module timer_tb ();
@@ -21,7 +21,7 @@ module timer_tb ();
         // Troca o valor de clk_tb várias vezes a cada 5000ns
         for(i = 0; i < 3005; i=i+1) 
         begin
-            #5000 clk_tb <= ~clk_tb;
+            #5 clk_tb <= ~clk_tb;
         end
     end
 
@@ -32,14 +32,20 @@ module timer_tb ();
         loadn_tb = 0;
         clearn_tb = 1;
         clk_tb = 1;
-        EN_tb = 1;
+        EN_tb = 0;
         data_tb = 4'd5;
-        #1000;
-        loadn_tb = 1;
-        #1000;
+        #1
         clearn_tb = 0;
-        #1000;
+        #1
         clearn_tb = 1;
+        #1;
+        loadn_tb = 1;
+        #1;
+        loadn_tb = 0;
+        #10;
+        loadn_tb = 1;
+        #10;
+        EN_tb = 1;
     end
     
 endmodule
