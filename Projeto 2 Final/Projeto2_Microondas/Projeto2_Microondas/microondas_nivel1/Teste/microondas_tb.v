@@ -15,13 +15,13 @@ module microwave_tb();
 
 
     initial begin
-        $dumpfile("microwave_tb.vcd");
+        $dumpfile("microondas_tb.vcd");
         $dumpvars;
 
         clock_tb = 1;
 
         for(i = 0; i < 700005; i=i+1) begin
-            #10 clock_tb <= ~clock_tb;
+            #5 clock_tb <= ~clock_tb;
         end
     end
 
