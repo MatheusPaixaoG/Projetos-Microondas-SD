@@ -1,6 +1,6 @@
-`include "../nivel3/HDL/contador_mod_6.v"
-`include "../nivel3/HDL/contador_mod_10.v"
-`include "../nivel3/HDL/contador_mod_10_min.v"
+`include "../timer_nivel2/nivel3/HDL/contador_mod_6.v"
+`include "../timer_nivel2/nivel3/HDL/contador_mod_10.v"
+`include "../timer_nivel2/nivel3/HDL/contador_mod_10_min.v"
 
 module timer (output wire [3:0] sec_ones, sec_tens, mins, 
     output wire zero, 

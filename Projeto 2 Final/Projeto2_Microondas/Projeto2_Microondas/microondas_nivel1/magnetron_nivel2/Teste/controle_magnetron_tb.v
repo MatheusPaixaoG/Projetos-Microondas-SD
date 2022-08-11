@@ -1,4 +1,5 @@
-`timescale 1ps/1ps
+`timescale 100ms/1ps
+`include "../HDL/controle_magnetron.v"
 
 module controle_magnetron_tb ();
 
@@ -56,7 +57,8 @@ module controle_magnetron_tb ();
 
         #10 startn_tb=1; stopn_tb=1; clearn_tb=1; timer_done_tb=0; door_closed_tb=1;   
         #50 startn_tb=0; stopn_tb=1; clearn_tb=1; timer_done_tb=0; door_closed_tb=1;   
-        #5 startn_tb=1; stopn_tb=0; clearn_tb=1; timer_done_tb=0; door_closed_tb=1;   
+        #25 startn_tb=1; stopn_tb=1; clearn_tb=1; timer_done_tb=0; door_closed_tb=1;   
+        #15 startn_tb=1; stopn_tb=0; clearn_tb=1; timer_done_tb=0; door_closed_tb=1;   
         #50 startn_tb=1; stopn_tb=1; clearn_tb=1; timer_done_tb=1; door_closed_tb=1;   
         #50 startn_tb=1; stopn_tb=0; clearn_tb=1; timer_done_tb=1; door_closed_tb=1;
 

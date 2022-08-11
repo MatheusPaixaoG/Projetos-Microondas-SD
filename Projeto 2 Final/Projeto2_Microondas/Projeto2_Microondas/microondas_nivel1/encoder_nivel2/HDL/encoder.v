@@ -1,7 +1,7 @@
-`include "../nivel3/HDL/contador_7_n_reciclavel.v"
-`include "../nivel3/HDL/divide_freq.v"
-`include "../nivel3/HDL/mux2_to_1.v"
-`include "../nivel3/HDL/priority_encoder.v"
+`include "../encoder_nivel2/nivel3/HDL/contador_7_n_reciclavel.v"
+`include "../encoder_nivel2/nivel3/HDL/divide_freq.v"
+`include "../encoder_nivel2/nivel3/HDL/mux2_to_1.v"
+`include "../encoder_nivel2/nivel3/HDL/priority_encoder.v"
 
 
 module encoder (output wire [3:0] D,

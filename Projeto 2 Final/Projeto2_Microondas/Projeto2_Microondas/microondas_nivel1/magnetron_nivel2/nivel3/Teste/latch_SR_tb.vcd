@@ -1,0 +1,42 @@
+$date
+	Wed Jul 27 20:45:40 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module latch_SR_tb $end
+$var wire 1 ! Q_tb $end
+$var reg 1 " R_tb $end
+$var reg 1 # S_tb $end
+$scope module UUT $end
+$var wire 1 " R $end
+$var wire 1 # S $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0"
+x!
+$end
+#1000000000000
+1!
+1#
+#2000000000000
+0!
+0#
+1"
+#3000000000000
+x!
+1#
+#4000000000000
+0!
+0#
+#5000000000000
+0"
+#7000000000000

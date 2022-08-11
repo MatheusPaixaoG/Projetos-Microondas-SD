@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+`timescale 100ms/1ps
 `include "../HDL/latch_SR.v"
 
 module latch_SR_tb();
